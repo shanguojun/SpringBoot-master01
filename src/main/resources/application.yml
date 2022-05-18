@@ -10,3 +10,10 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #配置映射文件
   type-aliases-package: com.example.test.bean #配置实体类
+
+server:
+  port: 8002  #设置请求端口
+  servlet:
+    context-path: /test0001  #指定 Tomcat的请求路径 http://localhost:8002/test0001/+ 地址
+    encoding:
+      charset: UTF-8    #设置 Tomcat 编码格式
